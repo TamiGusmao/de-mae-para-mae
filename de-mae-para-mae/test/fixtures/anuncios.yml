@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  mae: 
+  mae: one
   titulo: MyString
   tipo: MyString
   idade_minima: 1
@@ -10,7 +10,7 @@ one:
   status: MyString
 
 two:
-  mae: 
+  mae: two
   titulo: MyString
   tipo: MyString
   idade_minima: 1
