@@ -11,4 +11,8 @@ class AnunciosController < ApplicationController
 		@anuncio.save
 		redirect_to @anuncio
 	end
+
+	def index
+		@anuncios=Anuncio.all
+	end
 end

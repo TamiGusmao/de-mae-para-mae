@@ -1,0 +1,23 @@
+<h1>Anúncios disponíveis</h1>
+
+
+<table>
+	
+	<tr>
+<th>Mãe</th>
+<th>Titulo</th>
+<th>Cidade</th>
+<th>Estado</th>
+	</tr>
+
+	<% @anuncios.each do |anuncio| %>
+	<tr>
+		<td><%= anuncio.mae.nome %></td>
+		<td><%= anuncio.titulo %></td>
+		<td><%= anuncio.cidade %></td>
+		<td><%= anuncio.estado %></td>
+
+	</tr>
+	<% end %>
+
+</table>
