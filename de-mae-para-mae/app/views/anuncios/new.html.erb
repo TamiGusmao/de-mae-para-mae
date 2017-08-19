@@ -2,7 +2,7 @@
 <%= form_for :anuncio, url: anuncios_path do |f| %>
 	<p>
 		<%= f.label :mae %><br>
-		<%= f.text_field :mae %>
+		<%= f.select :mae, collection: @maes.map(&:nome) %>
 	</p>
 	<p>
 		<%= f.label :titulo %><br>

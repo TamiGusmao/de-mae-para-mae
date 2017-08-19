@@ -7,7 +7,7 @@ class MaesController < ApplicationController
 		@mae = Mae.new(params.require(:mae).permit(:nome, :email, :telefone, :cidade, :estado) )
 
 		@mae.save 
-		redirect_to @mae
+		redirect_to :controller => 'anuncios', :action => 'new'
 
 		
 
