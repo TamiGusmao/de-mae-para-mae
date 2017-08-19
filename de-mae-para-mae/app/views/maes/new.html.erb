@@ -1,1 +1,42 @@
 <h1>Cadastro de mãe</h1>
+<%= form_for :mae, url: maes_path do |f| %>
+	<p>
+		<%= f.label :nome %><br>
+		<%= f.text_field :nome %>
+	</p>
+
+
+	<p>
+		<%= f.label :email %><br>
+		<%= f.text_field :email %>
+	</p>
+
+	<p>
+		<%= f.label :telefone %><br>
+		<%= f.text_field :telefone %>
+	</p>
+
+	<p>
+		<%= f.label :cidade %><br>
+		<%= f.text_field :cidade %>
+	</p>
+
+	<p>
+		<%= f.label :estado %><br>
+		<%= f.text_field :estado %>
+	</p>
+
+
+	<p>
+	<%= f.submit "Salvar" %>
+	</p>
+
+
+
+
+
+
+
+
+
+<% end %> 
