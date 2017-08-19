@@ -1,1 +1,35 @@
 <h1>Cadastro de anúncio</h1>
+<%= form_for :anuncio, url: anuncios_path do |f| %>
+	<p>
+		<%= f.label :mae %><br>
+		<%= f.text_field :mae %>
+	</p>
+	<p>
+		<%= f.label :titulo %><br>
+		<%= f.text_field :titulo %>
+	</p>
+<p>
+		<%= f.label :tipo %><br>
+		<%= f.text_field :tipo %>
+	</p>
+	<p>
+		<%= f.label :idade_minima %><br>
+		<%= f.number_field :idade_minima %>
+	</p>
+	<p>
+		<%= f.label :idade_maxima %><br>
+		<%= f.number_field :idade_maxima %>
+	</p>
+	<p>
+		<%= f.label :descricao %><br>
+		<%= f.text_area :descricao %>
+	</p>
+<p>
+		<%= f.submit "Crie agora!" %>
+	</p>
+
+
+
+
+
+<% end %>
