@@ -1,7 +1,7 @@
 class CreateAnuncios < ActiveRecord::Migration[5.1]
   def change
     create_table :anuncios do |t|
-      t.string :mae
+      t.references :mae, foreign_key: true
       t.string :titulo
       t.string :tipo
       t.integer :idade_minima
