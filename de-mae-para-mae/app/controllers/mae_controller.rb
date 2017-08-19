@@ -1,0 +1,2 @@
+class MaeController < ApplicationController
+end

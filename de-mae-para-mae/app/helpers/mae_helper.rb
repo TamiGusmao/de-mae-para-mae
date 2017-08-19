@@ -1,0 +1,2 @@
+module MaeHelper
+end
